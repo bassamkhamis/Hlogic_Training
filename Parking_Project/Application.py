@@ -41,7 +41,7 @@ while True:
                 print(database)
                 cv2.waitKey(200)
             elif text in database:
-                TotalTime = datetime.datetime.now().minute -minute
+                TotalTime = datetime.datetime.now().minute -database[text]
                 print(TotalTime,"EL")
                 database.pop(text)
                 count -=1
